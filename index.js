@@ -1,4 +1,13 @@
-//import assets
+/*
+TODO:
+ - Dynamic screen scaling
+ - figure out what filezilla is and how to use it
+ - Buttons for mobile
+ - Camera panning
+ - See if you can have a website tab icon
+ - Build content!
+ */
+
 import Phaser from "phaser";
 import sky from "./assets/sky.png";
 import ground from "./assets/platform.png";
@@ -11,9 +20,9 @@ import fall_right from "./assets/fall_right.png";
 import fall_left from "./assets/fall_left.png";
 import title from "./assets/title.png";
 
-//configure everything
 var config = {
   type: Phaser.AUTO,
+  parent: 'phaser-app',
   width: 800,
   height: 600,
   physics: {
@@ -30,7 +39,6 @@ var config = {
   }
 };
 
-//establish some variables
 var facingLeft = false;
 var player;
 var platforms;
@@ -40,7 +48,6 @@ var yVelocity = 400;
 
 var game = new Phaser.Game(config);
 
-//preload assets
 function preload() {
   this.load.image('sky', sky);
   this.load.image('ground', ground);
@@ -54,9 +61,7 @@ function preload() {
   this.load.spritesheet('fall_left', fall_left, {frameWidth: 68, frameHeight: 100});
 }
 
-//now it's time to create some stuff!
 function create() {
-
   cursors = this.input.keyboard.createCursorKeys();
 
   this.add.image(400, 300, 'sky');
