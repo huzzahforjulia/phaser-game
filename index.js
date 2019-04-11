@@ -1,10 +1,10 @@
 /*
 TODO:
- - Dynamic screen scaling
- - figure out what filezilla is and how to use it
+ - upload favicon
+ - download filezilla
  - Buttons for mobile
- - Camera panning
- - See if you can have a website tab icon
+ - Camera panning (increase world size)
+ - make sprite one sheet
  - Build content!
  */
 
