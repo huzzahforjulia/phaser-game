@@ -22,7 +22,12 @@ import title from "./assets/title.png";
 
 var config = {
   type: Phaser.AUTO,
-  parent: 'phaser-app',
+  scale: {
+    mode: Phaser.Scale.FIT,
+    autoCenter: Phaser.Scale.CENTER_BOTH,
+    width: 800,
+    height: 600
+  },
   width: 800,
   height: 600,
   physics: {
@@ -150,6 +155,8 @@ function create() {
 }
 
 function update() {
+  this.cameras.main.setBounds(0, 0, 800, 600);
+  this.cameras.main.startFollow(player);
   //LEFT
   if(cursors.left.isDown){
     facingLeft = true;
