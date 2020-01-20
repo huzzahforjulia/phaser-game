@@ -1,5 +1,7 @@
 # phaser-game
-Here's where I develop my HTML5 game for my personal website!
+A demo game I made for an old personal website. I made a tiny pixellated version of myself that can be controlled via keyboard and easily hosted on a website because it is only written in JavaScript/HTML5/CSS.
+
+The idea was to gamify my resume, making it explorable in a tiny pixellated museum of my personal history. I put this project on hold because I wanted to figure out a better way to make it work on mobile. 
 
 I'm using the [Phaser 3](https://phaser.io/) framework to help me. 
 
